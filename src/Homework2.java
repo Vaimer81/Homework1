@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Homework2 {
     public static void main(String[] args) {
         //0.Перевести число 333 из шестнадцатиричной в десятичную
@@ -22,5 +24,23 @@ public class Homework2 {
         String threeRankNumber = Integer .toString(число2,2);
         System.out.println(threeRankNumber);
 
+       // задание 3
+            Scanner sc = new Scanner(System.in);
+            System.out.println("мама");
+            System.out.println("миша");
+            String мама = sc.next();
+            String word = sc.nextLine();
+            System.out.println("" );
+
+       // калькулятор валют
+        convertEurToUsd(5, 1.2);
+        convertEurToUsd(5, 2);
+
     }
+
+    public static void convertEurToUsd(int eur, double course) {
+        System.out.println(eur*course);
+
+
+        }
 }
